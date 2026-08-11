@@ -1,18 +1,20 @@
-# saadiyah678.github.io
+This repository hosts the personal portfolio site for Saadiyah Liakhat Ali.
 
-This repository contains a simple GitHub Pages portfolio for Saadiyah. It was created by an automated assistant with sample content.
+Files added/updated in this change:
+- assets/images/saadiyah.jpg — profile photo (uploaded per request)
+- index.html — updated to use the new photo, added social links (LinkedIn, Google Scholar, ORCID, ResearchGate, Bluesky), and replaced public email with a contact form.
+- assets/js/contact.js — client-side form handler that submits to Formspree (placeholder form ID).
 
-How to customize
+Important next steps for you:
+1. Verify the profile photo: I uploaded the image as assets/images/saadiyah.jpg. If you'd like a different filename or a different crop/size, tell me and I will update it.
+2. Formspree setup: The contact form currently posts to "https://formspree.io/f/your-form-id". To receive form submissions:
+   - Sign up at https://formspree.io and create a form. Replace the "your-form-id" in the form action in index.html with the ID Formspree provides (it looks like `f/mnqlkxyz`).
+   - Alternatively, if you prefer using Netlify Forms or a different provider, tell me and I can switch the form implementation.
+3. Enable GitHub Pages: Go to your repository Settings → Pages, set Source to Branch: main and folder: / (root). Save. The site will publish at https://saadiyah678.github.io when done.
 
-- Edit `index.html` to update your name, bio, research projects, publications, and contact details.
-- Edit `assets/css/styles.css` to change colors, spacing, and typography.
-- Push additional pages, PDFs, or images into the repository and link them from `index.html`.
+If you want, I can also:
+- Parse all entries from assets/data/publications.bib and generate a dedicated publications page.
+- Add CSV/JSON exports of your publications or add citation download links (BibTeX).
+- Add analytics, sitemap, or accessibility improvements.
 
-Deployment
-
-This repository is named `username.github.io` so GitHub Pages will publish the site at https://saadiyah678.github.io if the repository is public and Pages is enabled for the default branch.
-
-If you want, I can:
-- Add a publications page generated from a YAML or JSON file.
-- Add a minimal CMS (NetlifyCMS) or contact form.
-- Replace placeholder text with your real bio and list of publications if you provide them.
+Tell me what you want next and I will implement it and push the change.
