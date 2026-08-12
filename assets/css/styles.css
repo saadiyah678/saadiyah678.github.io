@@ -25,6 +25,16 @@ body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Ne
 .contact-card .social-icons{display:flex;gap:0.75rem;margin-top:0.5rem}
 .contact-card a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--card);border-radius:8px;color:var(--accent);text-decoration:none;box-shadow:0 6px 18px rgba(36,47,60,0.06)}
 .contact-card a svg{display:block}
+
+/* Awards page styles */
+.award-summary{font-weight:600;margin-bottom:0.75rem}
+.awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.awards-list{display:flex;flex-direction:column;gap:0.75rem}
+.award-card{background:linear-gradient(180deg,rgba(255,255,255,1),rgba(249,249,252,1));padding:0.9rem;border-radius:10px;border-left:4px solid var(--accent)}
+.award-card h4{margin:0 0 0.35rem 0;font-size:1rem}
+.award-card.featured{border-left-width:6px;box-shadow:0 10px 30px rgba(191,165,255,0.12);transform:translateY(0)}
+.muted{color:#666}
+
 @media (max-width:800px){
   .site-header .container{flex-direction:column;align-items:flex-start}
   .nav{margin-top:.5rem}
