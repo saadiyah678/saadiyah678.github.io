@@ -38,11 +38,11 @@
 
     <section id="about" class="card">
       <h3>About</h3>
-      <p>Dynamic and research-driven chemist with a Master of Science in Chemistry from the University of Sharjah, where I graduated with a perfect CGPA of 4.00/4.00 and ranked first in my cohort in the College of Sciences. I also hold a Bachelor of Science (Hons.) in Chemistry with Highest Honors from the University of Sharjah.</p>
+      <p>Dynamic and research-driven chemist with a Master of Science in Chemistry from the University of Sharjah, where I graduated with a perfect CGPA of 4.00/4.00 and ranked first in my cohort in the College of Sciences. I also hold a Bachelor of Science (Hons.) in Chemistry with Highest Honors from the University of Sharjah. During my junior year of bachelors, I interned as a forensic science and criminology intern in the International Center for Forensic Sciences (ICFS), at the Dubai Police HQ. My other notable positions include serving as the President of the Chemistry Students Association, Peer Tutor and Advisor at the Student Success Hub and Undergaduate Research Assistant, all at the University of Sharjah.</p>
 
       <p>I am currently a PhD student in Chemistry at Khalifa University of Science and Technology and a Full-time Research Assistant Scholarship Award recipient. My research focuses on electrochemical resource recovery and density functional theory (DFT) investigations, with particular interests in electrocatalysis, reaction mechanisms, and computational materials design for sustainable energy applications.</p>
 
-      <p>Previously, I served as a Graduate Research Assistant at the University of Sharjah, where I conducted research in seawater electrolysis, anti-corrosion strategies and advanced functional materials. I also completed my term as President of the American Chemical Society International Student Chapter at the University of Sharjah, leading scientific initiatives, outreach activities, and professional development programs that fostered collaboration and student engagement.</p>
+      <p>Previously, I served as a Graduate Research Assistant at the Center for Advanced Materials Research (CAMR) under the Research Institute of Sciences and Engineering (RISE) at University of Sharjah, where I conducted research in seawater electrolysis, anti-corrosion strategies and advanced functional materials. I also serve as the President of the American Chemical Society International Student Chapter at the University of Sharjah, leading scientific initiatives, outreach activities, and professional development programs that fostered collaboration and student engagement. I was invited to deliver an oral presentation at the New York University AbuDhabi (NYUAD), as a part of the ACS Regional MEA Conference - UAE, where I had the opportunity to showcase my knowledge and passion for forensic chemistry.</p>
 
       <p>Passionate about scientific research, innovation, and interdisciplinary problem-solving, I am committed to advancing sustainable technologies through the integration of experimental and computational chemistry.</p>
     </section>
@@ -72,6 +72,12 @@
       </ol>
     </section>
 
+    <section id="resume" class="card">
+      <h3>Resume</h3>
+      <p>You can download my resume here (upload your PDF to <code>assets/resume/saadiyah_resume.pdf</code> to enable the link):</p>
+      <p><a href="/assets/resume/saadiyah_resume.pdf" download>Download Resume (PDF)</a></p>
+    </section>
+
     <section id="achievements" class="card">
       <h3>Achievements & Awards</h3>
       <p class="award-summary">Recipient of multiple regional and national awards for innovation and scientific leadership, including Sharjah Chamber Awards, UAE Innovates recognition, and ACS community awards.</p>
@@ -80,9 +86,11 @@
 
     <section id="contact" class="card contact-card">
       <h3>Contact</h3>
-      <p>If you'd like to get in touch, please use the form below — messages are sent to my inbox via a serverless form provider.</p>
+      <p>If you'd like to get in touch, please use the form below — messages are sent via Netlify Forms.</p>
 
-      <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/your-form-id">
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
 
@@ -93,7 +101,6 @@
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit" class="btn">Send message</button>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
       </form>
 
       <div class="social-icons" aria-label="Social links">
@@ -147,6 +154,5 @@
     </footer>
   </main>
 
-  <script src="/assets/js/contact.js"></script>
 </body>
 </html>
